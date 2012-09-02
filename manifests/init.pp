@@ -1,9 +1,9 @@
 class rsyncssh (
-  configfile = '/etc/rsyncssh.conf',
-  basedir    = '/backup',
-  sshport    = '22',
-  source     = 'puppet:///modules/rsyncssh/rsyncssh.conf',
-  user       = 'rsyncssh',
+  $configfile = '/etc/rsyncssh.conf',
+  $basedir    = '/backup',
+  $sshport    = '22',
+  $source     = 'puppet:///modules/rsyncssh/rsyncssh.conf',
+  $user       = 'rsyncssh',
   ) {
 
   $backupdir = "${basedir}/BACKUP"
